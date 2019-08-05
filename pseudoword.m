@@ -1,5 +1,12 @@
 %% Load a dictionary file.
 
+
+%Input corpus expected to be a matlab string array vector (see: doc string) with one entry per word
+% in a variable named: inputWordArray
+% e.g. 
+%inputWordArray = ["word","word","word"];
+%
+
 %These functions download and load in a couple of open access list of
 %words.
 %Drugbank open access data rom: https://www.drugbank.ca
@@ -7,6 +14,8 @@ loadDrugnameDict;
 
 %The European SOWPODS scrabble dictionary:
 %loadScrabbleDict;
+
+
 
 %% Generate substring list that describe each markov "state"
 
