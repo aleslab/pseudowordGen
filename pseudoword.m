@@ -10,10 +10,10 @@
 %These functions download and load in a couple of open access list of
 %words.
 %Drugbank open access data rom: https://www.drugbank.ca
-loadDrugnameDict;
+%loadDrugnameDict;
 
 %The European SOWPODS scrabble dictionary:
-%loadScrabbleDict;
+loadScrabbleDict;
 
 
 
@@ -227,4 +227,5 @@ while length(markovSeq)<2000;
     markovSeq(end+1) = newChar;
 end
 
-
+%Display the words generated:
+disp(split(markovSeq,'$    '))
